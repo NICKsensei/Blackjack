@@ -1,10 +1,14 @@
-// 1. Create two variables, firstCard and secondCard.
-// Set their values to a random number between 2-11
+// Check if the person is elegible for a birthday card from the King! (100)
 
-// 2. Create a variable, sum, and set it to the sum of the two cards
+let age = 100;
 
-var firstCard = 3;
-var secondCard = 7;
-var sum = firstCard + secondCard;
-
-console.log(sum);
+// if less than 100    -> "Not elegible"
+// else if exactly 100 -> "Here is your birthday card from the King!"
+// else                -> "Not elegible, you have already gotten one"
+if (age < 100) {
+  console.log("Not elegible");
+} else if (age === 100) {
+  console.log("Here is your birthday card from the King!");
+} else {
+  console.log("Not elegible, you have already gotten one");
+}
